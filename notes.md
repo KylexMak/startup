@@ -1,0 +1,1 @@
+To create a repository, you need to create it on github. You need to set the owner, name, and license. After you can clone it to your IDE. You need to push changes to get them to happen. To get your IDE updated, you must pull changes.
