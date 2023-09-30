@@ -40,3 +40,4 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Text: There is a text label for all images and buttons. There is placeholder text for instructions on how to cook a certian dish.
 - Database: The users, recipes, and instructions are data that is pulled from the database.
 - Websocket: The lives comment section represents the real time communication.
+- API: There is a random quote generator that will generate quotes about food above the users on the user page.
