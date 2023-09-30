@@ -30,3 +30,13 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Data Base: Stores Users and recipes
 - Login: Registers families. Credentials stored in data base. Can't see recipe without authentication.
 - Websocket: Makes, deletes, or edits a recipe.
+
+# Deliverables
+## HTML Deliverables
+- HTML Pages: There are five pages in total. One for logging in, one for selecting which user to view, one for selecting what recipe, one to view the instructions, and one to add new recipes.
+- Links: The login page links to the user page. There is a navigation menu up at the top that links to every other page. Images and come buttons are also clickable which links to other pages.
+- Login: There is a small input box for their username and a faily code number that gives them access to other users who have the same family code. There is a login button too.
+- Images: There are thumbnail images and place holder images as the user will be able to select what they want as the displayed image.
+- Text: There is a text label for all images and buttons. There is placeholder text for instructions on how to cook a certian dish.
+- Database: The users, recipes, and instructions are data that is pulled from the database.
+- Websocket: The lives comment section represents the real time communication.
