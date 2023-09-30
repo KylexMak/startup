@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lan="en">
+    <header>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Family Secrets</title>
+    </header>
+
+    <body>
+        <img src="FamilySecretsLogo.jpg" alt="" width="220" height="90">
+        <hr>
+        <h1>Add a New Dish Recipe</h1>
+    
+        <form action="process_recipe.php" method="post">
+            <label for="dishName">Dish Name:</label><br>
+            <input type="text" id="dishName" name="dishName" required><br><br>
+        
+            <label for="ingredients">Ingredients:</label><br>
+            <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+        
+            <label for="cookingSteps">Cooking Steps:</label><br>
+            <ol>
+                <li><input type="text" name="step1" required></li>
+                <li><input type="text" name="step2"></li>
+                <li><input type="text" name="step3"></li>
+            <!-- You can add more steps as needed -->
+            </ol>
+        
+        <input type="submit" value="Submit Recipe">
+    </form>
+
+    <!--This will allow users to collect data and send it to a database.-->
+    </body>
+</html>
