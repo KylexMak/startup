@@ -9,6 +9,58 @@
     <body>
         <img src="FamilySecretsLogo.jpg" alt="" width="220" height="90">
         <hr>
-        
+        <div class="ingredents">
+            <h1>Ingredients</h1>
+            <ul>
+                <li>1 pound pasta</li>
+                <li>1 can marinara sauce</li>
+                <li>2 teaspoons basil</li>
+                <li>half a onion</li>
+                <li>1 cup chopped mushrooms</li>
+                <li>1 pound ground beef</li>
+                <li>oil</li>
+            </ul>
+            <!--These ingredients will be pulled from the database. This is just a place holder-->
+        </div>
+        <div>
+            <h1>Instructions</h1>
+            <h2>Steps</h2>
+            <ol>
+                <li>
+                    Boil water and add salt before placing the pasta into the water.
+                    Boil the pasta for around 11 minutes. I prefer 11 minutes as the pasta
+                    is a bit more firm. If you prefer a softer pasta, boil for a bit longer.
+                </li>
+                <li>Drain the pasta after it is done and set aside.</li>
+                <li>
+                    Dice up the onions and mushrooms.
+                </li>
+                <li>
+                    Heat a pan up on medium high heat. Add a bit of oil to the pan and wait until the pan is hot.
+                </li>
+                <li>Place the onions on the pan and fry until golden brown.</li>
+                <li>Add the ground beef to the pan and cook until done. Add seasonings to taste.</li>
+                <li>Add the mushrooms in and let it cook on lowheat.</li>
+                <li>Add the marinara sauce and the pasta.</li>
+            </ol>
+            <!--These steps are just a place holder and will be pulled from the data base. This is the format that should be expected-->
+        </div>
+        <hr>
+        <div>
+            <h1>Comments</h1>
+            <form action="submit_comment.php" method="post">
+                <label for="comment">Your Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <!--This is a place holder for my websocket input. There will be a live chat which can view past comments as well as send new ones to chat with others during real time-->
+        </div>
     </body>
+
+    <footer>
+        <hr>
+        <span>Author's Name</span>
+        <br>
+        <a href="https://github.com/KylexMak/startup.git">GitHub</a>
+    </footer>
 </html>
