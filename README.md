@@ -41,3 +41,9 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Database: The users, recipes, and instructions are data that is pulled from the database.
 - Websocket: The lives comment section represents the real time communication.
 - API: There is a random quote generator that will generate quotes about food above the users on the user page.
+
+## CSS Deliverables
+- Cards: There were multiple styles of cards
+- Transitions: Some cards used a transition to animate them.
+- Spacing: All the items are spaced.
+- Forms: All the forms had their boxes styled
