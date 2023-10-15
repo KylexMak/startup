@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Family Secrets</title>
+    <link rel="stylesheet" href="selection.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </header>
 
   <head>
-    <img src="FamilySecretsLogo.jpg" alt="" width="220" height="90">
-    <hr>
     <nav>
         <menu>
             <ul>
+                <li>
+                  Family Secrets
+                </li>
                 <li>
                     <a href="index.html">Sign In</a>
                 </li>
@@ -31,34 +34,77 @@
         </menu>
     </nav>
   </head>
-  <hr>
   <!--This creates the navigation bar.-->
   <body>
+    <h1>Users</h1>
     <div>
-      <h1>Users</h1>
-      <a href="foodRecipes.html"><img src="Generic Profile.png" width="72" height="72"><br>Johnathan Pierce</a>
-      <br>
-      <a href="foodRecipes.html"><img src="Generic Profile.png" width="72" height="72"><br>Nathan Green</a>
+      <div class="card-position">
+        <div class="card" style="width: 18rem;">
+          <img src="Generic Profile.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Johnathan Pierce</h5>
+            <a href="foodRecipes.html" class="btn btn-primary">Recipes</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="Generic Profile.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nathan Green</h5>
+            <a href="foodRecipes.html" class="btn btn-primary">Recipes</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="Generic Profile.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Timmy Turner</h5>
+            <a href="foodRecipes.html" class="btn btn-primary">Recipes</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-position-2">
+        <div class="card" style="width: 18rem;">
+          <img src="Generic Profile.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Josh Crandall</h5>
+            <a href="foodRecipes.html" class="btn btn-primary">Recipes</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="Generic Profile.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mark Cube</h5>
+            <a href="foodRecipes.html" class="btn btn-primary">Recipes</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="Generic Profile.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Slad Craee</h5>
+            <a href="foodRecipes.html" class="btn btn-primary">Recipes</a>
+          </div>
+        </div>
+      </div>
       <div>
         <!--The profiles above will be created by user input. This page is a dynamic page that will be pulling user profiles
           from the data base after they are created. This is a place holder for database data.-->
       </div>
-      <hr>
-      <div>
-        <p>"It is the food which you furnish to your mind that determines the whole character of your life."
-          <br>
-          ~ Emmer Fox
-          <!--The quote here will be randomly generated on another website and be pulled through into my website.
-          It will always be related to food.-->
-        </p>
+      <div class="text">
+        <div class="text-container">
+          <p>"It is the food which you furnish to your mind that determines the whole character of your life."
+            <br>
+            ~ Emmer Fox
+            <!--The quote here will be randomly generated on another website and be pulled through into my website.
+            It will always be related to food.-->
+          </p>
+        </div>
       </div>
     </div>
   </body>
 
   <footer>
-    <hr>
-    <span>Author's Name</span>
-    <br>
-    <a href="https://github.com/KylexMak/startup.git">GitHub</a>
-</footer>
+    <div class="container-fluid">
+        <span class="text-reset">Author Name(s)</span>
+        <a class="text-reset" href="https://github.com/KylexMak/startup.git">GitHub</a>
+    </div>
+  </footer>
 </html>
