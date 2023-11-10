@@ -47,3 +47,8 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Transitions: Some cards used a transition to animate them.
 - Spacing: All the items are spaced.
 - Forms: All the forms had their boxes styled
+
+## Javascript Deliverables
+- Login info is stored in localStorage
+- Login info is pulled from localStorage and displayed
+- Recipe Steps are stored in localStorage and displayed
