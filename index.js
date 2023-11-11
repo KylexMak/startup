@@ -13,3 +13,22 @@ app.use(express.static('public'));
 // Router for service endpoints
 const apiRouter = express.Router();
 app.use(`/api`, apiRouter);
+
+//getRecipes
+apiRouter.get('/recipes', (_req, res) => {
+    res.send(recipes);
+});
+
+//Submit Recipes
+apiRouter.post('/recipe', (req, res) => {
+    recipe = updateRecipes(req.body, recipe);
+    res.send(recipe);
+});
+
+app.use((_req, res) => {
+    res.sendFile('index.html', {root: 'public'});
+});
+
+app.listen(port, () => {
+    console.log('Listening on port ${port}');
+});
