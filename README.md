@@ -52,3 +52,8 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Login info is stored in localStorage
 - Login info is pulled from localStorage and displayed
 - Recipe Steps are stored in localStorage and displayed
+
+## WebService Deliverables
+- Gets the recipes that are made
+- Returns the stored recipes
+- Accesses a third party to generate a quote
