@@ -1,0 +1,15 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Are you tired of losing cherished family recipes, passed down through generations, in a sea of handwritten notes and fading cookbooks? Look no further than FamilyTable, your digital kitchen companion designed to preserve, organize, and share your family's culinary heritage. This website can store all your family's treasured recipes in one secure and easily searchable digital library. You can upload recipes passed down from grandparents, aunts, and uncles, ensuring they're never lost again. Become part of a passionate community of food lovers dedicated to preserving family traditions. Share tips, swap stories, and celebrate the joy of home-cooked meals. Don't let your family's culinary legacy fade away. Start your journey with Family Secrets today and savor the flavors of nostalgia with every bite. Create, connect, and cherish your family's recipes like never before.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
