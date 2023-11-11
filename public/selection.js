@@ -6,23 +6,18 @@ function GetUserName(){
 }
 
 function displayQuote() {
-    fetch('https://api.api-ninjas.com/v1/quotes?category=food')
+    fetch('https://api.api-ninjas.com/v1/quotes?category=food', {
+      headers: {"X-Api-Key": "caCA71eRKvvseR5VWyFlsA==ioyhOOJ5bfExL29G"}
+    })
       .then((response) => response.json())
       .then((data) => {
-        const containerEl = document.querySelector(".quote");
+        const quoteEl = document.querySelector(".quoteBody");
+        const authorEl = document.querySelector(".author");
 
-        const quoteEl = document.createElement('p');
-        quoteEl.classList.add('quote');
-        const authorEl = document.createElement('p');
-        authorEl.classList.add('author');
+        quoteEl.textContent = data[0].quote;
+        authorEl.textContent = data[0].author;
 
-        quoteEl.textContent = data.content;
-        authorEl.textContent = data.author;
-
-        // Clear previous quote and author
-        containerEl.innerHTML = '';
-
-        containerEl.appendChild(quoteEl);
-        containerEl.appendChild(authorEl);
+        console.log(data);
       });
   }
+  displayQuote();
