@@ -57,3 +57,9 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Gets the recipes that are made
 - Returns the stored recipes
 - Accesses a third party to generate a quote
+
+## Database Deliverables
+- Stores all recipes made by a user in different objects
+- Objects are posted to the database
+- When a recipe is made, the user is brought to the instruction screen which shows them how to cook.
+- Pulls the recipes from the database.

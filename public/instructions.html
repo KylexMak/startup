@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Family Secrets</title>
-        <span defer src="instructions.js"></span>
-        <link rel="stylesheet" href="instructions.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </header>
+<header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Secrets</title>
+    <script defer src="instructions.js"></script>
+    <link rel="stylesheet" href="instructions.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</header>
 
-    <head>
-        <nav>
-            <menu>
-                <ul>
-                    <li>
-                      Family Secrets
-                    </li>
-                    <li>
-                        <a href="index.html">Sign In</a>
-                    </li>
-                    <li>
-                        <a href="selection.html">Users</a>
-                    </li>
-                    <li>
-                        <a href="foodRecipes.html">Food Recipes</a>
-                    </li>
-                    <li>
-                        <a href="instructions.html">Cooking Steps</a>
-                    </li>
-                    <li>
-                        <a href="form.html">Adding New Recipes</a>
-                    </li>
-                </ul>
-            </menu>
-        </nav>
-    </head>
+<head>
+    <nav>
+        <menu>
+            <ul>
+                <li>
+                    Family Secrets
+                </li>
+                <li>
+                    <a href="index.html">Sign In</a>
+                </li>
+                <li>
+                    <a href="selection.html">Users</a>
+                </li>
+                <li>
+                    <a href="foodRecipes.html">Food Recipes</a>
+                </li>
+                <li>
+                    <a href="instructions.html">Cooking Steps</a>
+                </li>
+                <li>
+                    <a href="form.html">Adding New Recipes</a>
+                </li>
+            </ul>
+        </menu>
+    </nav>
+</head>
 
-    <body>
-        <div class="card">
+<body>
+    <div class="card-container">
+        <!--<div class="card">
             <h1><span class="DishName"></h1>
-            <h1>Ingredients</h1>
+            <h2>Ingredients</h2>
             <ul class="Ingredients-list">
                 <span class="DishIngredients"></span>
                 <li>1 pound pasta</li>
@@ -50,7 +52,6 @@
                 <li>1 pound ground beef</li>
                 <li>oil</li>
             </ul>
-            <!--These ingredients will be pulled from the database. This is just a place holder-->
         </div>
         <div class="card">
             <h1>Instructions</h1>
@@ -74,23 +75,24 @@
                 <li>Add the mushrooms in and let it cook on lowheat.</li>
                 <li>Add the marinara sauce and the pasta.</li>
             </ol>
-            <!--These steps are just a place holder and will be pulled from the data base. This is the format that should be expected-->
-        </div>
-        <div class="card">
-            <h1>Comments</h1>
-            <form action="submit_comment.php" method="post">
-                <label for="comment">Your Comment:</label><br>
-                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-                <input type="submit" class="btn btn-outline-primary" value="Submit">
-            </form>
-            <!--This is a place holder for my websocket input. There will be a live chat which can view past comments as well as send new ones to chat with others during real time-->
-        </div>
-    </body>
+        </div>-->
+    </div>
+    <div class="card">
+        <h1>Comments</h1>
+        <form action="submit_comment.php" method="post">
+            <label for="comment">Your Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+            <input type="submit" class="btn btn-outline-primary" value="Submit">
+        </form>
+        <!--This is a place holder for my websocket input. There will be a live chat which can view past comments as well as send new ones to chat with others during real time-->
+    </div>
+</body>
 
-    <footer>
-        <div class="container-fluid">
-            <span class="text-reset">Author Name(s)</span>
-            <a class="text-reset" href="https://github.com/KylexMak/startup.git">GitHub</a>
-        </div>
-    </footer>
+<footer>
+    <div class="container-fluid">
+        <span class="text-reset">Author Name(s)</span>
+        <a class="text-reset" href="https://github.com/KylexMak/startup.git">GitHub</a>
+    </div>
+</footer>
+
 </html>

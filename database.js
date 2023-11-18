@@ -19,8 +19,8 @@ async function addRecipe(recipe) {
     return result;
 }
 
-function getRecipes(recipeName){
-    const query = { name: recipeName};
+async function getRecipes(userName){
+  let query = {"Username": userName};
     const foundRecipes = recipeCollection.find(query);
     return foundRecipes.toArray();
 }

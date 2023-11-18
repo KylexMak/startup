@@ -1,6 +1,6 @@
-async function redirect(){
-    await loadInstructions();
-    window.location.href= 'instructions.html';
+ async function redirect(){
+  window.location.href= 'instructions.html';  
+  await loadInstructions();
 }
 
 async function loadInstructions(){
@@ -13,8 +13,14 @@ async function loadInstructions(){
     await saveRecipes(dishName.value, ingredients.value, steps.value);
 }
 
+function getUsername(){
+  const userName = localStorage.getItem('Username');
+  return userName;
+}
+
 async function saveRecipes(dishName, ingredients, steps){
-    const recipe = {name: dishName, materials: ingredients, instructions: steps}
+  const userName = getUsername();
+    const recipe = {Username: userName, name: dishName, materials: ingredients, instructions: steps}
 
     try {
         const response = await fetch('/api/recipe', {
@@ -28,6 +34,18 @@ async function saveRecipes(dishName, ingredients, steps){
         localStorage.setItem('recipe', JSON.stringify(food));
       } catch {
         // If there was an error then just track scores locally
-        this.updateScoresLocal(recipe);
+        this.updateRecipeLocal(recipe);
       }
+}
+
+function updateRecipeLocal(newRecipe){
+  let recipe = [];
+    const recipeText = localStorage.getItem('recipe');
+    if (recipeTextText) {
+      recipe = JSON.parse(recipeText);
+    }
+
+    recipe.push(newRecipe);
+
+    localStorage.setItem('recipe', JSON.stringify(recipe));
 }
