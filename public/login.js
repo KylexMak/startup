@@ -4,5 +4,4 @@ function login(){
     localStorage.setItem("Username", nameEl.value);
     localStorage.setItem("Family Code", familyCodeEl.value);
     window.location.href = "selection.html"
-
 }

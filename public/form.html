@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Family Secrets</title>
-        <script defer src="form.js"></script>
         <link rel="stylesheet" href="instructions.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </header>
@@ -53,18 +52,14 @@
                     <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
                 
                     <label for="cookingSteps">Cooking Steps:</label><br>
-                    <ol class="steps">
-                        <li><input id="step1" type="text" name="step1" required></li>
-                        <li><input id="step2" type="text" name="step2"></li>
-                        <li><input id="step3" type="text" name="step3"></li>
-                    <!-- You can add more steps as needed -->
-                    </ol>
-                
-                <input type="submit" class="btn btn-outline-primary" onclick="loadInstructions()" value="Submit Recipe">
-            </form>
+                    <textarea type="text" id="steps" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" class="btn btn-outline-primary" onclick="redirect()" value="Submit Recipe">
+                </form>
             </div>
         </div>
     <!--This will allow users to collect data and send it to a database.-->
+    
     </body>
 
     <footer>
@@ -73,4 +68,7 @@
             <a class="text-reset" href="https://github.com/KylexMak/startup.git">GitHub</a>
         </div>
     </footer>
+    
+    <script src="form.js"></script>
+
 </html>
