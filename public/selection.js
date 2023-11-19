@@ -1,4 +1,5 @@
 const Username = document.querySelector(".user");
+console.log(Username);
 Username.textContent = this.GetUserNameDisplay();
 
 function GetUserNameDisplay(){
@@ -7,7 +8,7 @@ function GetUserNameDisplay(){
 
 function displayAllUsers(){
   const cardContainer = document.querySelector('.card-position');
-  
+
 }
 function displayQuote() {
     fetch('https://api.api-ninjas.com/v1/quotes?category=food', {
