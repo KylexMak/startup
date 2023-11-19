@@ -1,4 +1,11 @@
- async function redirect(){
+const Username = document.querySelector(".user");
+Username.textContent = this.GetUserNameDisplay();
+
+function GetUserNameDisplay(){
+  return localStorage.getItem("Username") ?? "Unknown";
+}
+
+async function redirect(){
   window.location.href= 'instructions.html';  
   await loadInstructions();
 }

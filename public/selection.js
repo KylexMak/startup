@@ -1,10 +1,14 @@
 const Username = document.querySelector(".user");
-Username.textContent = this.GetUserName();
+Username.textContent = this.GetUserNameDisplay();
 
-function GetUserName(){
-    return localStorage.getItem("Username") ?? "Unknown";
+function GetUserNameDisplay(){
+  return localStorage.getItem("Username") ?? "Unknown";
 }
 
+function displayAllUsers(){
+  const cardContainer = document.querySelector('.card-position');
+  
+}
 function displayQuote() {
     fetch('https://api.api-ninjas.com/v1/quotes?category=food', {
       headers: {"X-Api-Key": "caCA71eRKvvseR5VWyFlsA==ioyhOOJ5bfExL29G"}

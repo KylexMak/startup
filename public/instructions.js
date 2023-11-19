@@ -1,8 +1,14 @@
+const Username = document.querySelector(".user");
+Username.textContent = this.GetUserNameDisplay();
+
+function GetUserNameDisplay(){
+  return localStorage.getItem("Username") ?? "Unknown";
+}
+
 function getUsername(){
     const userName = localStorage.getItem('Username');
     return userName;
-}
-
+  }
 async function loadRecipes(){
     let recipe = [];
     const userName = getUsername();
