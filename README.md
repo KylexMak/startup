@@ -63,3 +63,9 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Objects are posted to the database
 - When a recipe is made, the user is brought to the instruction screen which shows them how to cook.
 - Pulls the recipes from the database.
+
+## Login Deliverables
+- Logins with username and password
+- Blocks unauthorized users
+- Supports creation of users
+- Stores their information in the database
