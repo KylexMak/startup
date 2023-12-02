@@ -69,3 +69,9 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Blocks unauthorized users
 - Supports creation of users
 - Stores their information in the database
+
+## Websocket Deliverables
+- Connects to the web socket server
+- Sends messages through the web socket server
+- Receives messages through the web socket server
+- Displays username and message content
