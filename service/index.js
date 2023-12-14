@@ -8,7 +8,7 @@ const DB = require('./database.js');
 const authCookieName = 'token';
 
 // The service port. In production the frontend code is statically hosted by the service on the same port.
-const port = process.argv.length > 2 ? process.argv[2] : 4000;
+const port = process.argv.length > 2 ? process.argv[2] : 3000;
 server = app.listen(port, () => {
     console.log(`Listening on ${port}`);
 });
@@ -44,7 +44,9 @@ apiRouter.post('/auth/create', async (req, res) => {
 
 // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {
+    console.log("Test");
     const user = await DB.getUser(req.body.email);
+    console.log(user);
     if (user) {
         if (await bcrypt.compare(req.body.password, user.password)) {
             setAuthCookie(res, user.token);
