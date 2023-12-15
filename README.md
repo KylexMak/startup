@@ -75,3 +75,10 @@ Are you tired of losing cherished family recipes, passed down through generation
 - Sends messages through the web socket server
 - Receives messages through the web socket server
 - Displays username and message content
+
+
+## React Deliverables
+- Created using WebPack and Babel as generated from using create-react-app
+- multiple react components
+- made react router
+- made react hooks

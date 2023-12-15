@@ -8,7 +8,15 @@ export function Unauthenticated(props) {
   const [password, setPassword] = React.useState('');
   const [displayError, setDisplayError] = React.useState(null);
 
+  function login() {
+    const nameEl = document.querySelector("#userName");
+    const familyCodeEl = document.querySelector("#userPassword");
+    localStorage.setItem("Username", nameEl.value);
+    localStorage.setItem("Password", familyCodeEl.value);
+  }
+
   async function loginUser() {
+    login();
     loginOrCreate(`/api/auth/login`);
   }
 
@@ -18,18 +26,19 @@ export function Unauthenticated(props) {
 
   async function loginOrCreate(endpoint) {
     const response = await fetch(endpoint, {
-      method: 'post',
-      body: JSON.stringify({email: userName, password: password}),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
+        method: 'post',
+        body: JSON.stringify({ email: userName, password: password }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
     });
-    if (response?.status === 200) {
-      localStorage.setItem('userName', userName);
-      props.onLogin(userName);
+
+    if (response.ok) {
+        localStorage.setItem('userName', userName);
+        window.location.href = 'selection.html';
     } else {
-      const body = await response.json();
-      setDisplayError(`⚠ Error: ${body.msg}`);
+        const body = await response.json();
+        setDisplayError(`⚠ Error: ${body.msg}`);
     }
   }
 
